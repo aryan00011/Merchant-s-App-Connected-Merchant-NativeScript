@@ -1,16 +1,48 @@
 <Page loaded="load">
-  <StackLayout>
-      <Image source="{{ logoSource }}" />
+  <ScrollView>
+      <StackLayout orientation="vertical" row="0">
+          <Image source="{{ logoSource }}" />
 
-      <Label text="Email Address:" />
-      <TextField width="200" text="{{ email_address }}" id="email" hint="Email Address" keyboardType="email" />
+          <Label text="Email Address:" />
+          <TextField width="200" text="{{ email_address }}" id="email" hint="Email Address" keyboardType="email" />
 
-      <Label text="Username:" />
-      <TextField width="200" text="{{ username }}" id="username" hint="Username" />
+          <Label text="Username:" />
+          <TextField width="200" text="{{ username }}" id="username" hint="Username" />
 
-      <Label text="Password:" />
-      <TextField width="200" text="{{ password }}" secure="true" hint="Password" />
+          <Label text="Password:" />
+          <TextField width="200" text="{{ password }}" secure="true" hint="Password" />
 
-      <Button text="Sign Up" tap="register" />
-  </StackLayout>
+          <Label text="First Name:" />
+          <TextField width="200" text="{{ firstName }}" id="firstname" hint="First Name" />
+
+          <Label text="Last Name:" />
+          <TextField width="200" text="{{ lastName }}" id="lastname" hint="Last Name" />
+          
+          <Label text="Store Name:" />
+          <TextField width="200" text="{{ storeName }}" id="storename" hint="Store Name" />
+          
+          <Label text="Store Type:" />
+          <TextField width="200" text="{{ storeType }}" id="storetype" hint="Retail" />
+          
+          <Label text="Street:" />
+          <TextField width="200" text="{{ street }}" id="street" hint="123 Main Street" />
+          
+          <Label text="City:" />
+          <TextField width="200" text="{{ city }}" id="city" hint="City" />
+          
+          <Label text="State:" />
+          <TextField width="200" text="{{ state }}" id="state" hint="State" />
+          
+          <Label text="Zip Code:" />
+          <TextField width="200" text="{{ zipCode }}" id="zipcode" hint="Zip Code" />
+          
+          <Label text="Phone:" />
+          <TextField width="200" text="{{ phone }}" id="phone" hint="(123) 456-7890" />
+          
+          <Label text="Hours:" />
+          <TextField width="200" text="{{ hours }}" id="hours" hint="8:00 am - 5:00 pm" />
+          
+          <Button text="Sign Up" tap="register" />
+      </StackLayout>
+  </ScrollView>
 </Page>
