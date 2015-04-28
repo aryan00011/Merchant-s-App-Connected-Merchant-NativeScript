@@ -24,6 +24,9 @@
           <Label text="Store Type:" />
           <TextField width="200" text="{{ storeType }}" id="storetype" hint="Retail" />
           
+          <Label text="Description:" />
+          <TextView width="400" text="{{ description }}" id="description" hint="Store Description" />
+          
           <Label text="Street:" />
           <TextField width="200" text="{{ street }}" id="street" hint="123 Main Street" />
           
@@ -43,6 +46,13 @@
           <TextField width="200" text="{{ hours }}" id="hours" hint="8:00 am - 5:00 pm" />
           
           <Button text="Sign Up" tap="register" />
+
+          <Label text=" " view=hide />
+          <Label text=" " view=hide />
+          <Label text=" " view=hide />
+          <Label text=" " view=hide />
+          <Label text=" " view=hide />
+          <Label text=" " view=hide />
       </StackLayout>
   </ScrollView>
 </Page>

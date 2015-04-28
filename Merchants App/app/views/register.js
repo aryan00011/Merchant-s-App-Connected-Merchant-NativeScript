@@ -16,6 +16,7 @@ exports.load = function (args) {
     var lastname = viewModule.getViewById(page, "lastname");
     var storename = viewModule.getViewById(page, "storename");
     var storetype = viewModule.getViewById(page, "storetype");
+    var description = viewModule.getViewById(page, "description");
     var street = viewModule.getViewById(page, "street");
     var city = viewModule.getViewById(page, "city");
     var state = viewModule.getViewById(page, "state");
@@ -31,6 +32,7 @@ exports.load = function (args) {
     pageData.set("lastName", "");
     pageData.set("storeName", "");
     pageData.set("storeType", "");
+    pageData.set("description", "");
     pageData.set("street", "");
     pageData.set("city", "");
     pageData.set("state", "");
@@ -59,6 +61,7 @@ exports.register = function () {
         LastName: pageData.get("lastName"),
         StoreName: pageData.get("storeName"),
         StoreType: pageData.get("storeType"),
+        Description: pageData.get("description"),
         Street: pageData.get("street"),
         City: pageData.get("city"),
         State: pageData.get("state"),

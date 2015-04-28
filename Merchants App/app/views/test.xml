@@ -1,5 +1,7 @@
 <Page loaded="load">
   <StackLayout>
       <Label text="Login worked!" />
+      <Button text="Start Chat" tap="chat" />
+      <Label text="Code for chat: 1QaZxSw2" />  
   </StackLayout>
 </Page>
